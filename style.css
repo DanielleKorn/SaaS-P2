@@ -311,7 +311,8 @@ body {
 	justify-content: center;
 }
 
-.my-row.deal-title {
+.my-row.deal-title,
+.task-title {
 	height: 18%;
 	align-items: center;
 }
@@ -335,13 +336,17 @@ body {
 	justify-content: center;
 }
 
-.flexible.task-graphics {
-	justify-content: center;
+.task-title {
+	height: 16%;
 	align-items: center;
 }
 
+.flexible.tasks-graphics {
+	height: 84%;
+}
+
 .graphic {
-	width: 55%;
+	width: 50%;
 }
 
 .key.three-circle {
