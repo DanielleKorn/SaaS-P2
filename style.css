@@ -65,6 +65,7 @@ body {
 	background-color: white;
 	height: 48%;
 	width: 100%;
+	padding: 1%;
 }
 
 .hamburger {
@@ -158,7 +159,7 @@ body {
 /* Search-bar */
 
 .search-bar {
-	height: 7%;
+	height: 60px;
 	width: 100%;
 	justify-content: center;
 }
@@ -348,7 +349,7 @@ body {
 }
 
 .deals-graphic {
-	height: 75%;
+	height: auto;
 }
 
 .flexible.task-wheel {
@@ -378,6 +379,45 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* Nav-bar */
+.logo {
+	height: 60px;
+}
+.main-options {
+	height: 41.5%;
+}
+
+.settings {
+	height: 53.5%;
+}
+
+.nav-name {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 19px;
+	color: #334d6e;
+}
+
+.toggle-sidebar {
+	height: 5%;
+	color: #90a0b7;
+	font-size: 11px;
+}
+
+.logo,
+.main-options,
+.settings,
+.toggle-sidebar {
+	justify-content: stretch;
+}
+
+.main-options.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
 }
 
 /* Nav-bar functionality */
