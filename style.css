@@ -300,9 +300,30 @@ body {
 	.side-nav {
 		display: none;
 	}
+	.flexible.wrapper {
+		flex-direction: column;
+	}
+	.flexible.full-site {
+		width: 100%;
+	}
 	.flexible.task-section,
 	.flexible.charts {
-		width: 85%;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100%;
+	}
+	.flexible.main-body {
+		flex-direction: column;
+		display: block;
+	}
+	.body {
+		height: auto;
+	}
+	.calendar.flexible {
+		display: none;
+	}
+	.task {
+		display: block;
 	}
 }
 
