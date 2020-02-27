@@ -80,7 +80,7 @@ body {
 
 .my-row {
 	display: flex;
-	width: 100%;
+	width: 95%;
 	display: inline-flex;
 	justify-content: space-between;
 }
@@ -100,6 +100,10 @@ body {
 
 .norm {
 	font-weight: normal;
+}
+
+.user-pic {
+	border-radius: 50%;
 }
 
 /* Side-nav */
@@ -138,10 +142,6 @@ body {
 	font-size: 11px;
 	line-height: 16px;
 	color: #90a0b7;
-}
-
-.sierra {
-	border-radius: 50%;
 }
 
 /* Search-bar */
@@ -198,10 +198,15 @@ body {
 .number-completed,
 .day-of-week,
 .due-date,
-.date {
-	font-weight: 500;
+.date,
+.user-name {
 	font-size: 13px;
 	line-height: 19px;
+}
+
+.number-completed,
+.day-of-week {
+	font-weight: 500;
 }
 
 .number-completed {
@@ -247,11 +252,46 @@ body {
 	height: 75%;
 }
 
-.task {
+/* Individual tasks */
+.flexible.task {
 	width: 95%;
+	height: 17.5%;
+	justify-content: space-evenly;
+	align-items: center;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
 	border-radius: 4px;
-	height: 20%;
+}
+
+.flexible.task .due {
+	align-self: flex-start;
+	padding-left: 2.5%;
+}
+
+.user-name {
+	color: #707683;
+}
+
+.status-button {
+	width: 14%;
+	height: 100%;
+	border-radius: 4px;
+	color: white;
+	font-size: 11px;
+	text-align: center;
+}
+
+.status {
+	position: relative;
+	top: 20%;
+	transform: translateY(-20%);
+}
+
+.green {
+	background: #2ed47a;
+}
+
+.red {
+	background: #f7685b;
 }
 
 /* Nav-bar functionality */
@@ -259,6 +299,10 @@ body {
 @media (max-width: 576px) {
 	.side-nav {
 		display: none;
+	}
+	.flexible.task-section,
+	.flexible.charts {
+		width: 85%;
 	}
 }
 
