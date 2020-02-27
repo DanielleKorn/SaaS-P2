@@ -67,6 +67,10 @@ body {
 	width: 100%;
 }
 
+.hamburger {
+	display: hidden;
+}
+
 /* General reusable style */
 .bottom-divider {
 	margin: 0;
@@ -106,6 +110,11 @@ body {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.button {
+	cursor: pointer;
+	text-decoration: none;
 }
 
 /* Side-nav */
@@ -296,6 +305,13 @@ body {
 	background: #f7685b;
 }
 
+.show-more.button {
+	color: #109cf1;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 19px;
+}
+
 /*chart section */
 
 .flexible.deals,
@@ -327,6 +343,10 @@ body {
 	height: 10%;
 }
 
+.key-circle {
+	margin: 5px;
+}
+
 .deals-graphic {
 	height: 75%;
 }
@@ -350,12 +370,11 @@ body {
 }
 
 .key.three-circle {
-	width: 17%;
+	width: 20%;
 	height: 80%;
-	justify-self: flex-end;
 }
 
-.wrapper {
+.graph-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -395,5 +414,13 @@ body {
 @media (max-width: 991.98px) {
 	.flexible.wrapper {
 		flex-direction: column;
+	}
+	.side-nav {
+		display: none;
+	}
+	.hamburger {
+		display: inline-block;
+		position: absolute;
+		right: 15px;
 	}
 }
