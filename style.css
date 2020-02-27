@@ -23,7 +23,8 @@ body {
 .flexible.full-site,
 .flexible.task-section,
 .flexible.charts,
-.task-top-bar {
+.task-top-bar,
+.flexible.task {
 	flex-direction: column;
 }
 
@@ -89,6 +90,16 @@ body {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 22px;
+}
+
+.show.small {
+	font-size: 12px;
+	line-height: 18px;
+	color: #6a707e;
+}
+
+.norm {
+	font-weight: normal;
 }
 
 /* Side-nav */
@@ -186,6 +197,7 @@ body {
 
 .number-completed,
 .day-of-week,
+.due-date,
 .date {
 	font-weight: 500;
 	font-size: 13px;
@@ -197,14 +209,9 @@ body {
 }
 
 .show-time {
-	right: 36px;
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 18px;
-}
-
-.show {
-	color: #6a707e;
 }
 
 .time {
@@ -219,10 +226,12 @@ body {
 .calendar.flexible {
 	text-align: center;
 	justify-content: space-between;
+	align-items: center;
 	height: 40%;
 }
 
-.day-of-week {
+.day-of-week,
+.due-date {
 	color: #334d6e;
 	opacity: 0.5;
 }
