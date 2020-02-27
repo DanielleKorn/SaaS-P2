@@ -450,6 +450,9 @@ body {
 	.task {
 		display: block;
 	}
+	.show-more.button {
+		display: none;
+	}
 }
 @media (max-width: 991.98px) {
 	.flexible.wrapper {
