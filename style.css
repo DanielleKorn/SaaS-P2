@@ -17,9 +17,10 @@ body {
 	display: flex;
 	width: 100%;
 	height: 100%;
+	padding: 16px;
 }
 
-.flexible.entire-site,
+.flexible.full-site,
 .flexible.task-section,
 .flexible.charts {
 	flex-direction: column;
@@ -36,6 +37,7 @@ body {
 
 .flexible.task-section {
 	width: 50%;
+	justify-content: space-evenly;
 }
 
 .flexible.charts {
@@ -45,4 +47,114 @@ body {
 .flexible.task-section,
 .flexible.charts {
 	height: 90%;
+}
+
+/* General reusable style */
+.bottom-divider {
+	margin: 0;
+	border-bottom: 1px solid #ebeff2;
+	width: 100%;
+}
+
+/* Calander for task-bar */
+
+.section-title {
+	color: #192a3e;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 0.01em;
+}
+.color-bar {
+	position: relative;
+}
+
+.progress-bar.lower {
+	width: 100%;
+}
+
+.progress-bar.overlay {
+	width: 80%;
+	position: absolute;
+	bottom: 1px;
+}
+
+.calendar {
+	width: 100%;
+	height: 30%;
+}
+
+.number-completed,
+.day-of-week,
+.date {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 19px;
+}
+
+.number-completed {
+	color: #334d6e;
+}
+
+.show-time {
+	right: 36px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.show {
+	color: #6a707e;
+}
+
+.time {
+	color: #109cf1;
+}
+
+.number-completed,
+.show-time {
+	display: inline-block;
+}
+
+.calendar.flexible {
+	text-align: center;
+	justify-content: space-between;
+	height: 40%;
+}
+
+.day-of-week {
+	color: #334d6e;
+	opacity: 0.5;
+}
+
+.date {
+	color: #4c5862;
+}
+
+.flexible.tasks {
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 75%;
+}
+
+.task {
+	width: 95%;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+	height: 20%;
+}
+
+/* Nav-bar functionality */
+
+@media (max-width: 576px) {
+	.side-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.flexible.wrapper {
+		flex-direction: column;
+	}
 }
