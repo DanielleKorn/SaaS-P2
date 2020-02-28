@@ -254,14 +254,13 @@ body {
 	color: #109cf1;
 }
 
-.whole-date .today {
+.whole-date .today,
+.whole-date .today .date,
+.calendar .date:hover {
 	background-color: #109cf1;
 	border-radius: 50%;
 	width: 24px;
 	height: 24px;
-}
-
-.whole-date .today .date {
 	color: white;
 }
 
