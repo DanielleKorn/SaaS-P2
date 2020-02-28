@@ -18,10 +18,14 @@
 			data-search-pseudo-elements
 		></script>
 
-		<!--Font Ref-->
+		<!--Fonts Ref-->
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+			rel="stylesheet"
 		/>
 	</head>
 	<body>
@@ -30,18 +34,14 @@
 				<div class="flexible side-nav-wrapper">
 					<!--not sure if need these classes-->
 					<div class="logo">
-						<img
-							class="img-fluid"
-							src="nav-icons/SaaS-Kit.png"
-							alt="SaaS Kit logo"
-						/>
+						<span class="saas">SaaS Kit</span>
 					</div>
 					<hr class="bottom-divider" />
 					<div class="main-options">
 						<div class="main-options container">
 							<div class="avatar">
 								<img
-									class="img-fluid user-pic"
+									class="img-fluid user-pic sierra"
 									src="nav-icons/avatar.png"
 									alt="User profile picture"
 								/>
@@ -50,27 +50,27 @@
 									<div class="email">s.ferguson@gmail.com</div>
 								</div>
 							</div>
-							<div class="nav-item">
+							<div class="nav-item button">
 								<img class="nav-icon" src="nav-icons/dashboard.png" />
-								<span class="nav-name">Dashboard</span>
+								<span class="nav-name dashboard">Dashboard</span>
 							</div>
-							<div class="nav-item">
+							<div class="nav-item button">
 								<img class="nav-icon" src="nav-icons/tasks.png" />
 								<span class="nav-name">Tasks</span>
 							</div>
-							<div class="nav-item">
+							<div class="nav-item button">
 								<img class="nav-icon" src="nav-icons/email.png" />
 								<span class="nav-name">Email</span>
 							</div>
-							<div class="nav-item">
+							<div class="nav-item button">
 								<img class="nav-icon" src="nav-icons/contacts.png" />
 								<span class="nav-name">Contacts</span>
 							</div>
-							<div class="nav-item">
+							<div class="nav-item button">
 								<img class="nav-icon" src="nav-icons/chat.png" />
 								<span class="nav-name">Chats</span>
 							</div>
-							<div class="nav-item">
+							<div class="nav-item button">
 								<img class="nav-icon" src="nav-icons/deals.png" />
 								<span class="nav-name">Deals</span>
 							</div>
@@ -78,8 +78,10 @@
 					</div>
 					<hr class="bottom-divider" />
 					<div class="settings">
-						<img class="nav-icon" src="nav-icons/settings.png" />
-						<span class="nav-name">Settings</span>
+						<div class="nav-item">
+							<img class="nav-icon" src="nav-icons/settings.png" />
+							<span class="nav-name">Settings</span>
+						</div>
 					</div>
 					<div class="toggle-sidebar">
 						<img class="nav-icon" src="nav-icons/toggle.png" />
@@ -116,8 +118,14 @@
 								</div>
 								<div class="show-time">
 									<span class="show small">Show:</span>
-									<span class="time">This week</span>
-									<span class="dropdown-arrow"></span>
+									<span class="time week">This week</span>
+									<span>
+										<img
+											class="img-fluid button"
+											src="nav-icons/arrow.png"
+											alt="dropdown arrow"
+										/>
+									</span>
 								</div>
 							</div>
 
@@ -136,8 +144,10 @@
 							<h1 class="section-title">23 December, Sunday</h1>
 							<div class="calendar flexible">
 								<div class="whole-date">
-									<div class="day-of-week">Sun</div>
-									<div class="date">23</div>
+									<div class="day-of-week sun">Sun</div>
+									<div class="date today">
+										<span class="date">23</span>
+									</div>
 								</div>
 								<div class="whole-date">
 									<div class="day-of-week">Mon</div>
@@ -184,7 +194,7 @@
 									/>
 									<span class="user-name norm"> George fields</span>
 								</div>
-								<div class="status-button green">
+								<div class="status button green">
 									<span class="status">Completed</span>
 								</div>
 							</div>
@@ -207,7 +217,7 @@
 									/>
 									<span class="user-name norm">Rebecca Moore</span>
 								</div>
-								<div class="status-button red">
+								<div class="status button red">
 									<span class="status">Ended</span>
 								</div>
 							</div>
@@ -230,7 +240,7 @@
 									/>
 									<span class="user-name norm">Lindsey Stroud</span>
 								</div>
-								<div class="status-button green">
+								<div class="status button green">
 									<span class="status">Completed</span>
 								</div>
 							</div>
@@ -244,7 +254,13 @@
 								<div class="show-time">
 									<span class="show small">Show:</span>
 									<span class="time">This month</span>
-									<span class="dropdown-arrow"></span>
+									<span>
+										<img
+											class="img-fluid button"
+											src="nav-icons/arrow.png"
+											alt="dropdown arrow"
+										/>
+									</span>
 								</div>
 							</div>
 							<hr class="bottom-divider" />
@@ -268,7 +284,13 @@
 								<div class="show-time">
 									<span class="show small">Show:</span>
 									<span class="time">This month</span>
-									<span class="dropdown-arrow"></span>
+									<span>
+										<img
+											class="img-fluid button"
+											src="nav-icons/arrow.png"
+											alt="dropdown arrow"
+										/>
+									</span>
 								</div>
 							</div>
 							<hr class="bottom-divider" />
