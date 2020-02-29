@@ -510,7 +510,7 @@ input[type="text"] {
 	margin-left: 7%;
 }
 
-/* Nav-bar functionality */
+/* Responsive functionality */
 @media (max-width: 650px) {
 	.side-nav {
 		display: none;
