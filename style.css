@@ -24,6 +24,10 @@ body {
 	flex-direction: column;
 }
 
+.flexible.wrapper {
+	min-height: 675px;
+}
+
 .flexible.full-site {
 	width: 82.5%;
 }
@@ -106,6 +110,7 @@ body {
 
 .user-pic {
 	border-radius: 50%;
+	max-width: 24px;
 }
 
 .vertical-align {
@@ -117,6 +122,11 @@ body {
 .button {
 	cursor: pointer;
 	text-decoration: none;
+}
+
+.responsive-img {
+	width: 100%;
+	height: auto;
 }
 
 /* Side-nav */
@@ -399,6 +409,11 @@ input[type="text"] {
 
 .key-circle {
 	margin: 5px;
+}
+
+.circle {
+	max-width: 350px;
+	max-height: 300px;
 }
 
 .deals-graphic {
