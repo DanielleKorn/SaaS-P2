@@ -5,10 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 
-		<!--Bootstrap files-->
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/bootstrap.theme.css" />
-
 		<!--My CSS style file-->
 		<link rel="stylesheet" href="style.css" />
 
@@ -27,14 +23,17 @@
 			href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!--Bootstrap files-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.theme.css" />
 	</head>
 	<body>
 		<div class="flexible wrapper">
 			<div class="flexible side-nav">
 				<div class="flexible side-nav-wrapper">
-					<!--not sure if need these classes-->
 					<div class="logo">
-						<span class="saas">SaaS Kit</span>
+						<span class="saas button">SaaS Kit</span>
 					</div>
 					<hr class="bottom-divider" />
 					<div class="main-options">
@@ -89,25 +88,23 @@
 					</div>
 				</div>
 			</div>
-			<!--Why isnt this working????
-			<a><i class="hamburger fas fa-bars"></i></a>-->
 			<div class="flexible full-site">
 				<div class="search-bar bottom-divider my-row">
-					<div class="my-row search-contents">
+					<form class="my-row search-contents">
 						<div>
 							<img
 								class="img-fluid center-me"
 								src="nav-icons/search.png"
 								alt="global search icon"
 							/>
-							<span class="search-text">Global search</span>
+							<input type="text" name="search" placeholder="Global search" />
 						</div>
 						<img
 							class="img-fluid center-me"
 							src="nav-icons/notifications.png"
 							alt="global search icon"
 						/>
-					</div>
+					</form>
 				</div>
 				<div class="flexible main-body">
 					<div class="flexible task-section">
