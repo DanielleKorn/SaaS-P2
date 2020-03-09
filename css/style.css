@@ -24,6 +24,7 @@ body {
 	flex-direction: column;
 }
 
+/* makes horizontally responsive*/
 .flexible.wrapper {
 	min-height: 675px;
 }
@@ -515,6 +516,10 @@ input[type="text"] {
 	.side-nav {
 		display: none;
 	}
+	.flexible.main-body {
+		flex-direction: column;
+		display: block;
+	}
 	.flexible.wrapper {
 		flex-direction: column;
 	}
@@ -526,10 +531,6 @@ input[type="text"] {
 		flex-wrap: wrap;
 		width: 100%;
 		height: 100%;
-	}
-	.flexible.main-body {
-		flex-direction: column;
-		display: block;
 	}
 	.calendar.flexible {
 		display: none;
